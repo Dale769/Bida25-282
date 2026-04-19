@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chicken Place|Products</title>
+</head>
+<body>
+<header>
+  <div class="logo-area">
+   <img src="Chicken Place logo.png" alt="Chicken Place Logo" class="logo-img" onerror="this.src='https://placehold.co/60x60/c43a1b/white?text=CP'"> 
+  </div>
+ <nav>
+   <a href="index.html">Home</a>
+   <a href="products.html">Products</a>
+   <a href="services.html">Services</a>
+   <a href="contact.html">Contact</a>
+   <a href="feedback.html">Feedback</a>
+  </nav>
+</header>
+ <div style="padding-top:72px;">
+    <div class="products-hero">
+      <div class="section-tag" style="background:rgba(245,168,0,.15);color:var(--gold);border-color:rgba(245,168,0,.3);">All Items</div>
+      <h1>Our <span>Products</span></h1>
+      <p>Every cut. Every price. Fresh and frozen — always available.</p>
+ </div>
+<main class="container">
+  <h2 class="section-title">Complete Price List</h2>
+  <div class="category-filters" id="filterContainer">
+    <button class="filter-btn active" data-cat="all">All Items</button>
+    <button class="filter-btn" data-cat="whole">Whole Chicken</button>
+    <button class="filter-btn" data-cat="cuts">Chicken Cuts</button>
+    <button class="filter-btn" data-cat="offal">Offal & Intestines</button>
+    <button class="filter-btn" data-cat="value">Value Packs</button>
+  </div>
+   <div class="products-grid" id="productsGrid"></div>
+</main>
+<footer>
+<span>© 2026 Chicken Place (Pty) Ltd. All rights reserved.</span>
+  </p>VAT No. C1656120112</p>
+  <p>P.O. Box 550365, Gaborone, Botswana</p>
+</footer>
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+</body>
+</html>

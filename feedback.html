@@ -1,0 +1,97 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chicken Place|Feedback</title>
+</head>
+<body>
+<header>
+  <div class="logo-area">
+   <img src="Chicken Place logo.png" alt="Chicken Place Logo" class="logo-img" onerror="this.src='https://placehold.co/60x60/c43a1b/white?text=CP'"> 
+  </div>
+ <nav>
+   <a href="index.html">Home</a>
+   <a href="products.html">Products</a>
+   <a href="services.html">Services</a>
+   <a href="contact.html">Contact</a>
+   <a href="feedback.html">Feedback</a>
+  </nav>
+</header>
+<main>
+     <div style="padding-top:72px;">
+    <div class="feedback-hero">
+      <div class="section-tag" style="background:rgba(0,0,0,.1);color:var(--red-dark);border-color:rgba(0,0,0,.15);">Your Voice Matters</div>
+      <h1>Share Your Feedback</h1>
+      <p>Help us serve you better — every comment makes a difference.</p>
+    </div>
+    <div class="feedback-section">
+      <div class="form-card full-width" style="margin-bottom:2rem;">
+        <h3>Rate Our Service</h3>
+        <p style="color:var(--text-muted);font-size:14px;margin-bottom:1rem;">
+          How would you rate your overall experience at Chicken Place?
+        </p>
+        <div class="star-rating" id="stars" aria-label="Star rating">
+          <span class="star" role="button" aria-label="1 star">★</span>
+          <span class="star" role="button" aria-label="2 stars">★</span>
+          <span class="star" role="button" aria-label="3 stars">★</span>
+          <span class="star" role="button" aria-label="4 stars">★</span>
+          <span class="star" role="button" aria-label="5 stars">★</span>
+        </div>
+        <div class="rating-label" id="rating-label">Click a star to rate</div>
+      </div>
+      <div class="feedback-grid">
+        <div class="form-card">
+          <h3>Customer Feedback</h3>
+          <div class="form-group">
+            <label for="fb-name">Your Name</label>
+            <input id="fb-name" type="text" placeholder="e.g. Kefilwe Molosiwa">
+          </div>
+          <div class="form-group">
+            <label for="fb-phone">Phone Number</label>
+            <input id="fb-phone" type="tel" placeholder="+267 7X XXX XXX">
+          </div>
+          <div class="form-group">
+            <label for="fb-comment">Your Comment</label>
+            <textarea id="fb-comment" placeholder="Tell us about your experience — what went well, what could be improved..."></textarea>
+          </div>
+          <button class="form-submit" type="button">Submit Feedback</button>
+        </div>
+        <div class="form-card">
+          <h3>Report an Issue</h3>
+          <div class="form-group">
+            <label for="rp-name">Your Name</label>
+            <input id="rp-name" type="text" placeholder="e.g. Boitumelo Kgosi">
+          </div>
+          <div class="form-group">
+            <label for="rp-phone">Contact Number</label>
+            <input id="rp-phone" type="tel" placeholder="+267 7X XXX XXX">
+          </div>
+          <div class="form-group">
+            <label for="rp-type">Issue Type</label>
+            <select id="rp-type">
+              <option value="">Select issue type...</option>
+              <option>Product Quality</option>
+              <option>Incorrect Pricing</option>
+              <option>Staff Behaviour</option>
+              <option>Cleanliness</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rp-desc">Description</label>
+            <textarea id="rp-desc" placeholder="Please describe the issue in detail so we can address it promptly..."></textarea>
+          </div>
+          <button class="form-submit dark" type="button">Submit Report</button>
+        </div>
+      </div>
+    </div>
+</main>    
+ <footer>
+        <span>© 2026 Chicken Place (Pty) Ltd. All rights reserved.</span>
+        </p>VAT No. C1656120112</p>
+        <p>P.O. Box 550365, Gaborone, Botswana</p>
+  </footer>
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+</body>
+</html>   
