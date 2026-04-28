@@ -1,0 +1,122 @@
+.contact-hero {
+  background: linear-gradient(
+    135deg,
+    var(--red-dark),
+    var(--red),
+    var(--orange)
+  );
+  color: var(--white);
+  text-align: center;
+  padding: 80px 20px 50px; 
+}
+.contact-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 5vw, 48px); 
+  margin-bottom: 10px;
+}
+.contact-hero p {
+  color: rgba(255, 255, 255, 0.85);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.contact-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-top: 5px solid var(--red); 
+}
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 14px;
+}
+.contact-detail-item i {
+  font-size: 20px;
+  color: var(--orange);
+  margin-top: 2px;
+  min-width: 24px; 
+}
+.contact-detail-item a {
+  color: var(--red);
+  text-decoration: none;
+}
+.contact-detail-item a:hover {
+  text-decoration: underline;
+}
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;          
+  background: var(--red);
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+  transition: background var(--transition), transform var(--transition);
+}
+.social-icons a:hover {
+  background: var(--orange);
+  transform: scale(1.1);  
+}
+.map-col {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  border-top: 5px solid var(--yellow);
+}
+.map-col h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--red-dark);
+}
+.map-placeholder {
+  background: linear-gradient(135deg, #f5f5f5, #ebebeb);
+  border-radius: var(--radius);
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 2px dashed var(--orange); 
+}
+.map-text {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.map-link {
+  background: var(--red);
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: bold;
+  transition: background var(--transition);
+}
+.map-link:hover {
+  background: var(--red-dark);
+}

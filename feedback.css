@@ -1,0 +1,121 @@
+.feedback-hero {
+  background: linear-gradient(
+    135deg,
+    var(--yellow) 0%,
+    var(--orange) 60%,
+    var(--red)    100%
+  );
+  color: var(--black); 
+  text-align: center;
+  padding: 80px 20px 50px; 
+}
+.feedback-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 5vw, 48px); 
+  margin-bottom: 10px;
+}
+.feedback-hero p {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feedback-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.star-rating {
+  display: flex;
+  gap: 8px;
+  font-size: 36px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.star {
+  color: #ddd; 
+  transition: color var(--transition), transform var(--transition);
+  user-select: none; 
+}
+.star.selected,
+.star:hover {
+  color: var(--yellow);
+  transform: scale(1.15);
+}
+.rating-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--orange); 
+  margin-bottom: 2rem;
+}
+.form-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--red-dark);
+  margin-bottom: 16px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: var(--off-white);
+  transition: border-color var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+.form-group textarea {
+  height: 110px;
+  resize: vertical; 
+}
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--red), var(--orange));
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity var(--transition), transform var(--transition);
+}
+.form-submit:hover {
+  opacity: 0.88;
+  transform: translateY(-1px); 
+}
+.form-submit.dark {
+  background: linear-gradient(135deg, var(--black), var(--red-dark));
+}
